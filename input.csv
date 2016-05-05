@@ -1,0 +1,4 @@
+p,N,sample_size,posterior_size,method,sumstat,application
+0.5,25,50,100,rej,mean,estimate
+0.5,25,50,100,rej,median,estimate
+0.5,25,50,100,rej,mode,estimate

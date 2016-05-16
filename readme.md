@@ -1,8 +1,8 @@
 # Simple ABC Tutorial
----------------------
+=====================
 
 ## Overview
-===========
+-----------
 Simple ABC Tutorial will introduce you to inference via Approximate Bayesian Computation using the simple example of estimating the mean of a binomial distribution. You can choose to run the tutorial as is with the test case supplied herein, using 1 command line input. Alternatively, you can modify the analysis by editing 'input.csv' and run the tutorial multiple times in order to familiarize yourself with how different components influence the analysis.
 
 #### Brief introduction to Approximate Bayesian Computation
@@ -14,7 +14,7 @@ _**Approximate Bayesian Computation (ABC)** is one method that reduces the compu
 
 
 ## Installation
-===============
+---------------
 **Download or clone this (SimpleABCTutorial repository)!**
 **Requires:**
    + [python3](https://www.python.org/downloads/)
@@ -26,7 +26,7 @@ _**Approximate Bayesian Computation (ABC)** is one method that reduces the compu
 
 
 ## Example
-==========
+----------
 ###### This example demonstrates how choice of summary statistic influences your inference!
 
 ###### The repository you cloned or downloaded includes a built in example of sorts.
@@ -62,17 +62,8 @@ Before experimenting with changing parameters in input.csv, follow the steps und
 
 
 
-## Example
-==========
-###### This example demonstrates how choice of summary statistic influences your inference!
-
-###### The repository you cloned or downloaded includes a built in example of sorts.
-Before experimenting with changing parameters in input.csv, follow the steps under implementation to confirm the tutorial is functional. Follow [this](file:///C:/Users/PC%20User/Desktop/Spring2016/Programming/project/presentation/SimpleABCTutorial/SimpleABCTutorial.html) link to see what the tutorial should look like.
-
-
-
 ## Versions
-===========
+-----------
 Simple ABC Tutorial 1.0 is written in Python3.5 as distributed in [Anaconda](https://docs.continuum.io/anaconda/install). No dependencies outside of this distribution are required.
 
 **What to expect in future versions!**
@@ -82,7 +73,7 @@ Simple ABC Tutorial 1.0 is written in Python3.5 as distributed in [Anaconda](htt
 
 
 ## Resources
-============
+------------
 ###### References
 Marjoram P, Tavare S (2006) Modern computational approaches for analysing molecular genetic variation data. Nature Reviews Genetics 7, 759-770.
 

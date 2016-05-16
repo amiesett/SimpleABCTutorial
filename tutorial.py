@@ -16,8 +16,8 @@ from AbcBin import AbcBin
 
 
 def get_args(line):
-    ''' '''
-    line_as_list = line.split(',')
+    '''Parse 1 line of input.csv for arguments to initialize AbcBin objects.'''
+    line_as_list = line.strip().split(',')
     return float(line_as_list[0]), int(line_as_list[1]), int(line_as_list[2]), int(line_as_list[3]), line_as_list[4], line_as_list[5]
 
 

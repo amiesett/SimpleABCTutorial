@@ -1,9 +1,8 @@
 # Simple ABC Tutorial
 ---------------------
-=====================
 
 ## Overview
------------
+===========
 Simple ABC Tutorial will introduce you to inference via Approximate Bayesian Computation using the simple example of estimating the mean of a binomial distribution. You can choose to run the tutorial as is with the test case supplied herein, using 1 command line input. Alternatively, you can modify the analysis by editing 'input.csv' and run the tutorial multiple times in order to familiarize yourself with how different components influence the analysis.
 
 #### Brief introduction to Approximate Bayesian Computation
@@ -15,7 +14,7 @@ _**Approximate Bayesian Computation (ABC)** is one method that reduces the compu
 
 
 ## Installation
----------------
+===============
 **Download or clone this (SimpleABCTutorial repository)!**
 **Requires:**
    + [python3](https://www.python.org/downloads/)
@@ -26,49 +25,64 @@ _**Approximate Bayesian Computation (ABC)** is one method that reduces the compu
 
 
 
+## Example
+==========
+###### This example demonstrates how choice of summary statistic influences your inference!
+
+###### The repository you cloned or downloaded includes a built in example of sorts.
+Before experimenting with changing parameters in input.csv, follow the steps under implementation to confirm the tutorial is functional.
+
+
+
 ## Implementation
 -----------------
 **1.** Populate the fields of 'input.csv'
-   + **p**: Parameter of true binomial distribution defining the probability of success. Can take **floating points** between 0.0 and 1.0.
-   + **N**: Parameter of true binomial distribution defining the number of trials, can take **integers** theoretically without bound. However, keep in mind at large values binomial can be approximated by the normal distribution.
-   + **sample_size**: The number of random samples our observed and simulated datasets will contain, can take **integers**. I encourage you to experiment, but start small (~20-50).
-   + **posterior_size**: The number of accepted parameter estimates we will accept before ending our analysis, can take **integers**. Again, I encourage you to experiment, but start small (~100).
+   + **p**: Parameter of true binomial distribution defining the probability of success. Takes **floating points** between 0.0 and 1.0.
+   + **N**: Parameter of true binomial distribution defining the number of trials. Takes **integers**, theoretically, without bound. However, keep in mind that at large values the binomial can be approximated by the normal distribution.
+   + **sample_size**: The number of random samples our observed and simulated datasets will contain. Takes **integers**. I encourage you to experiment, but start small (~20-50).
+   + **posterior_size**: The number of accepted parameter estimates we will accept before ending our analysis. Takes **integers**. Again, I encourage you to experiment, but start small (~100).
    + **method**: Model fitting algorithm that will be used. At present a modified rejection algorithm indicated by **rej** is the only supported option
-   + **sumstat**: Summary statistic that will be used to summarize datasets for model fitting. Can take **mean** | **median** | **mode**.
+   + **sumstat**: Summary statistic that will be used to summarize datasets for model fitting. Takes **mean** | **median** | **mode**.
 
-**2.** At the command line, cd into the SimpleABCTutorial directory.
+**2.** At the command line, cd into the SimpleABCTutorial directory.  
+
 **3.** *Enter the command:* ipython notebook SimpleABCTutorial.ipynb
    + A web browser will open with an active ipython notebook with 2 lines of code.
+
    ![alt text](https://raw.githubusercontent.com/amiesett/SimpleABCTutorial/master/ipynb.JPG)
+
 **4.** Immediately click the File tab in the left top corner and select the option to make a copy.
    + Save the copy as with a new file name!
    + Close the web tab of the original ipython notebook without any changes.
+
 **5.** Hover your mouse pointer over the Cell tab of the ipython notebook and select Run.
    + Your tutorial will appear below.
+
    ![alt text](https://raw.githubusercontent.com/amiesett/SimpleABCTutorial/master/tutorial.JPG)
 
 
 
 ## Example
-----------
+==========
+###### This example demonstrates how choice of summary statistic influences your inference!
+
 ###### The repository you cloned or downloaded includes a built in example of sorts.
 Before experimenting with changing parameters in input.csv, follow the steps under implementation to confirm the tutorial is functional. Follow [this](file:///C:/Users/PC%20User/Desktop/Spring2016/Programming/project/presentation/SimpleABCTutorial/SimpleABCTutorial.html) link to see what the tutorial should look like.
 
-###### This example demonstrates how choice of summary statistic influences your inference!
 
 
 ## Versions
------------
+===========
 Simple ABC Tutorial 1.0 is written in Python3.5 as distributed in [Anaconda](https://docs.continuum.io/anaconda/install). No dependencies outside of this distribution are required.
 
 **What to expect in future versions!**
-   + implementation of another model fitting option, local linear regression adjustment of simulated summary statistics (**method**: *rej* | *linear*)
-   + implementation model selection to compare parameter inference under models of binomial and normal distributions (Check out the source code! Model selection will be implemented in an option argument of AbcBin.run())
+   + implementation of another model fitting option, local linear regression adjustment of simulated summary statistics
+   + implementation model selection to compare parameter inference under models of binomial and normal distributions
 
 
 
 ## Resources
-------------
+============
 ###### References
 Marjoram P, Tavare S (2006) Modern computational approaches for analysing molecular genetic variation data. Nature Reviews Genetics 7, 759-770.
 
@@ -78,7 +92,9 @@ Tavare S, Balding DJ, Griffiths RC, Donnelly P (1997) Inferring coalescence time
 
 ###### Additional reading
 **Math-y**
+
 Beaumont MA (2010) Approximate Bayesian Computation in Evolution and Ecology. In: Annual Review of Ecology, Evolution, and Systematics, Vol 41 (eds. Futuyma DJ, Shafer HB, Simberloff D), pp. 379-406.
 
 **Light**
+
 Csillery K, Blum MGB, Gaggiotti OE, Francois O (2010) Approximate Bayesian Computation (ABC) in practice. Trends in Ecology & Evolution 25, 410-418.

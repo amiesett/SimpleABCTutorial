@@ -1,4 +1,4 @@
-p,N,sample_size,posterior_size,method,sumstat
-0.5,25,50,100,rej,mean
-0.5,25,50,100,rej,median
-0.5,25,50,100,rej,mode
+p,N,sample_size,posterior_size,method,sumstat,
+0.5,25,50,100,rej,mean,
+0.5,25,50,100,rej,median,
+0.5,25,50,100,rej,mode,
